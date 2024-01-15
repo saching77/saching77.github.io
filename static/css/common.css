@@ -1,0 +1,104 @@
+/* Font Configurations */
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inconsolata {
+    font-family: 'Inconsolata', monospace;
+}
+
+.dark {
+    color: #0F0F0F;
+}
+
+.light {
+    color: #F0F0F0;
+}
+
+.view-btn {
+    text-decoration: none;
+    color: #0F0F0F;
+}
+
+.view-btn:hover {
+    color: #0F0F0F;
+    font-weight: bolder;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Smartphone Screens */
+@media only screen and (max-width: 640px) {
+    .large {
+        font-size: 25px;
+    }
+    
+    .medium {
+        font-size: 20px;
+    }
+
+    .small {
+        font-size: 20px;
+    }
+    
+    .x-small {
+        font-size: 10px;
+    }
+}
+
+/* iPad Screens */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    .large {
+        font-size: 30px;
+    }
+    
+    .medium {
+        font-size: 20px;
+    }
+
+    .small {
+        font-size: 20px;
+    }
+    
+    .x-small {
+        font-size: 12px;
+    }
+}
+
+/* Smaller Laptop Screens */
+@media only screen and (min-width: 991px) and (max-width: 1280px) {
+    .large {
+        font-size: 40px;
+    }
+    
+    .medium {
+        font-size: 25px;
+    }
+
+    .small {
+        font-size: 20px;
+    }
+    
+    .x-small {
+        font-size: 13px;
+    }
+}
+
+/* Regular Laptops and Television Screens */
+@media only screen and (min-width: 1281px) {
+    .large {
+        font-size: 50px;
+    }
+    
+    .medium {
+        font-size: 35px;
+    }
+
+    .small {
+        font-size: 20px;
+    }
+    
+    .x-small {
+        font-size: 15px;
+    }
+}
