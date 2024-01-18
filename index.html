@@ -13,29 +13,24 @@
         rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-
     <!-- CSS -->
     <link href="/static/css/index.css" rel="stylesheet">
     <link href="/static/css/common.css" rel="stylesheet">
 </head>
-<body class="montserrat dark">
+<body>
     <!-- Main View -->
     <div class="main-view row">
-        <div class="left-column col-md-6">
+        <div class="left-column col-md-4">
             <!-- Hero Section -->
-            <div class="hero">
-                <p>
-                    <span class="large fw-bolder">Sachin</span><span class="large fw-lighter"> Ghegade</span><br>
-                    <span class="medium fw-bolder">Design</span>
+            <div id="hero">
+                <p class="x-large">
+                    <span class="bold">Sachin</span> Ghegade<br>
+                    <span class="large text-muted bold">DESiGN</span>
                 </p>
             </div>
 
             <!-- Navigation Bar -->
-            <div class="navbar" id="vertical-navbar">
+            <div class="navbar regular" id="vertical-navbar">
                 <ul class="navbar-nav">
                     <a class="nav-link" href="index.html#about">
                         <div class="row">
@@ -57,330 +52,280 @@
                             </div>
                         </div>
                     </a>
-                    <a class="nav-link" href="index.html#case-studies">
+                    <a class="nav-link" href="index.html#work">
                         <div class="row">
                             <div class="col-md-auto">
                                 <hr>
                             </div>
                             <div class="col-md-auto x-small">
-                                CASE STUDIES
+                                WORK
                             </div>
                         </div>
                     </a>
-                    <a class="nav-link" href="index.html#blog">
+                    <a class="nav-link" href="index.html#posts">
                         <div class="row">
                             <div class="col-md-auto">
                                 <hr>
                             </div>
                             <div class="col-md-auto x-small">
-                                BLOGS
+                                POSTS
                             </div>
                         </div>
                     </a>
                 </ul>
             </div>
-
-            <!-- Contact -->
-            <div class="contact row">
-                <div class="col-md-auto">
-                    <a href="tel:+91 9960060177">
-                        <img class="contact-icon" src="/static/images/phone.png">
-                    </a>
-                </div>
-                <div class="col-md-auto">
-                    <a href="mailto:sachin.ghegade@gmail.com">
-                        <img class="contact-icon" src="/static/images/email.png">
-                    </a>
-                </div>
-                <div class="col-md-auto">
-                    <a href="https://www.linkedin.com/in/sachinghegade/" target="_blank">
-                        <img class="contact-icon" src="/static/images/linkedin.png">
-                    </a>
-                </div>
-                <div class="col-md-auto">
-                    <a href="/static/docs/Sachin-Ghegade-Resume.pdf" download="Sachin-Ghegade-Resume">
-                        <img class="contact-icon" src="/static/images/download.png">
-                    </a>
-                </div>
-            </div>
         </div>
 
-        <div class="right-column col-md-6" data-bs-spy="scroll" data-bs-target="vertical-navbar" data-bs-smooth-scroll="true">
-            <!-- Alert -->
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                This site is currently <strong>under development</strong>. So, some of the elements <strong>won't</strong> function properly. Sorry for inconvenience!
-            </div>
-
+        <div class="right-column col-md-8" data-bs-spy="scroll" data-bs-target="vertical-navbar" data-bs-smooth-scroll="true">
             <!-- About Section -->
-            <div class="about" id="about">
+            <div class="regular" id="about">
                 <p>
-                    Hello, I'm Sachin - a design executor, back in 2006, I
-                    decided to try into creating innovative solutions focusing
-                    user Experience at a centre. <span class="fw-bolder">Fast-forward to today, and
-                    I've had the privilege of building solutions for various
-                    domains</span> they include Fintech, Loan Management,
-                    Insurance, Digital Oil Fields, Performance Management,
-                    Predictive Maintenance, Process Intelligence, Real Tinne
-                    Performance, E-Commerce etc.
-                    <br><br>
-                    <span class="fw-bolder">My main focus these days is building products and
-                    leading projects for our clients at Lentra as an
-                    individual + lead contributor.</span> In my free time I've also
-                    released an online documents that covers everything
-                    you need to know about UX, Ulf Design Thinking, WCAG.
-                    <br><br>
-                    When I'm not at the computer, I'm usually do paintings,
-                    listen Instrumental Music, Explore out with my wife and
-                    two children in nature.
+                    Hello, I'm Sachin - a design executor, back in 2006, I decided to try
+                    into creating innovative solutions focusing <span class="bold">User Experience</span> as a
+                    centre. Fast-forward to today, and I've had the privilege of building
+                    solutions for various domains they include <span class="bold">BFSI</span> Loan Management,
+                    Documentation, Administration, Insurance, <span class="bold">Manufacturing</span> Digital Oil
+                    Fields, Performance Management, Predictive Maintenance, Process
+                    Intelligence, Real Time Performance, E-Commerce etc. My main
+                    focus these days is <span class="bold">building products and leading projects for our
+                    clients at Lentra</span> as an individual + lead contributor. In my free time
+                    I've also released an online documents that covers everything you
+                    need to know about UX, IJI, Design Thinking, WCAG.
                 </p>
             </div>
 
             <!-- Experience Section -->
-            <div class="experience" id="experience">
-                <div class="pb-3">
+            <div class="regular" id="experience">
+                <p class="medium bold smoke">EXPERIENCE</p>
+                <div class="pb-5">
                     <p>
-                        <span class="fw-bolder">Lead UX Designer | Lentra.AI</span><br>
-                        <span class="fw-lighter"><em>March 22 - Present</em></span>
+                        <span class="bold">Design Lead</span> (Manager - Product User Experience)<br>
+                        Lentra.AI | March 22 - Present
                     </p>
-                    <ul>
-                        <li>
-                            Executing SaaS, Low Code-No Code
-                            platform from UX viewpoint by keeping
-                            lending customer journey and ecosystem
-                            at the center.
-                        </li>
-                        <li>
-                            Closely working with user and customer how they interact with the product
-                            and it's ecosystem from overall journey level down to the micro details;
-                            journeys focused Self Serve, Assisted, Account Aggregator, vKYC, eSign,
-                            DigiLocker, Dashboard, Portal Management, Form Administration, API
-                            Microsystems etc.
-                        </li>
-                        <li>
-                            Being a BFA artist my core is to follow primarily design principles and
-                            elements to make sure each solution makes an impact and smoothly
-                            interacts with the receiver (user) by following essentials like balance, contrast,
-                            emphasis, hierarchy, pattern, navigation, imagery, iconography etc.
-                        </li>
-                        <li>
-                            Good familiarity with frontend HTML, CSS and backend Dev structure
-                            proposing UX solution. Daily interaction with Product Owners, Project
-                            Managers, Business Analysts, Architects, Developers via Huddle, Stand-up.
-                            Active contribution into requirement gathering, User interviews of
-                            internal-external user.
-                        </li>
-                        <li>
-                            Ensuring overall design + design management process is streamlined.
-                            Leading the design through Why-Why analysis, WCAG-POUR standards while
-                            identifying continuous improvement opportunities for Web, Native and
-                            Hybrid Applications. JIRA board, Tempo, Agile + Design Sprint are my
-                            day-to-day collaborators to keep work efficient.
-                        </li>
-                    </ul>
-                    <span class="badge rounded-pill bg-light text-dark x-small">Topic 1</span>
-                    <span class="badge rounded-pill bg-light text-dark x-small">Topic 2</span>
-                    <span class="badge rounded-pill bg-light text-dark x-small">Topic 3</span>
+                    <p>
+                        Design Lead for B2B/ B2C cloud-based fintech lending digital products, used as digital
+                        financial technology including APIs helps lenders make faster, more informed decisions.
+                        Executing SaaS, Low Code-No Code platform from UX viewpoint by keeping lending
+                        customer journey and ecosystem at the centre.
+                    </p>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Personal Loan</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">BNPL</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Consumer Durable</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Loan Management</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Credit Card</span>
                 </div>
                 
-                <div class="py-3">
-                    <p class="fw-bolder">
-                        <span class="fw-bolder">Principal Designer | Foolproof</span><br>
-                        <span class="fw-lighter"><em>September 21 - February 22</em></span>
+                <div class="py-5">
+                    <p>
+                        <span class="bold">Principal Designer</span><br>
+                        Foolproof | Sep 21 - Feb 22
                     </p>
-                    <ul>
-                        <li>
-                            Led the UX design process for Home Insurance, E-Commerce projects
-                            resulting user engagement with positive increase. Followed Double Diamond
-                            methodologies; Discover-Define-Design-Deliver, alongwith design systems.
-                        </li>
-                    </ul>
-                    <span class="badge rounded-pill bg-light text-dark x-small">Topic 1</span>
-                    <span class="badge rounded-pill bg-light text-dark x-small">Topic 2</span>
-                    <span class="badge rounded-pill bg-light text-dark x-small">Topic 3</span>
+                    <p>
+                        Active participation was to come up with a solution for Digital Insurance ecosystem
+                        product, an efficient solution allowing businesses to actively engage with customers and
+                        offer them convenient services. Native mobile application, Home Insurance digital product
+                        offered customers a convenient service.Simplified overall experience and streamlined
+                        journey to achieve the goal in a minimum timeline. The product is primarily targeted to run
+                        on mobile with iOS and Android OS.
+                    </p>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Branding & Identity</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Product Design</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Double Diamond</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">User Research</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Wireframing</span>
                 </div>
                 
-                <div class="py-3">
-                    <p class="fw-bolder">
-                        <span class="fw-bolder">Designer | Hitachi Vantara</span><br>
-                        <span class="fw-lighter"><em>June 09 - August 21</em></span>
+                <div class="py-5">
+                    <p>
+                        <span class="bold">Design Lead</span> (Manager - Specialised Services)<br>
+                        Hitachi Vantara | Jun 09 - Aug 21
                     </p>
-                    <ul>
-                        <li>
-                            Began with first and single designer to CoP lead who established and derived
-                            Hitachi India Experience Design vertical. Facilitated workshops how design
-                            translates to code while understanding of frontend and backend code.
-                        </li>
-                        <li>
-                            Demonstrated strength in delivering through all stages of product
-                            development and drived key partnerships from initial ideation to shipping
-                            and supporting multiple teams and their needs.
-                        </li>
-                        <li>
-                            Gathered design sprint, backlog items, budgeting, forecasting,
-                            documentation, business flows, and lessons learned documents captured
-                            in retrospectives.
-                        </li>
-                    </ul>
-                    <span class="badge rounded-pill bg-light text-dark x-small">Topic 1</span>
-                    <span class="badge rounded-pill bg-light text-dark x-small">Topic 2</span>
-                    <span class="badge rounded-pill bg-light text-dark x-small">Topic 3</span>
+                    <p>
+                        Began with single product/service designer of the company to UX/UI Design COE lead.
+                        Responsible for a drive India design team and championing end-to-end / cross-device
+                        product experiences. Followed primary role for Hitachi Digital/ Social Innovation and Digital
+                        Transformation products and their customers; specific to IoT, Logistics, Data Management,
+                        eCommerce, BFSI, Retail, Manufacturing, Oil and Gas, Automobiles, Healthcare,
+                        Government, and Education.
+                    </p>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Product Design</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Service Design</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Team Management</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Client Facing</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Brand Management</span>
                 </div>
 
+                <div class="py-5">
+                    <p>
+                        <span class="bold">Sr. Designer</span><br>
+                        Hexaware Technologies | Sep 07 - May 09
+                    </p>
+                    <p>
+                        Responsible for overall UX/UI activities and deliverables for internal and external
+                        stakeholders specialised in BFSI & Securities domains.
+                    </p>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Product Design</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Graphic/Visual Design</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">CSS Standardisation</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Requirement Analysis</span>
+                </div>
 
-                <a class="btn btn-dark icon-link icon-link-hover my-3" href="/static/docs/Sachin-Ghegade-Resume.pdf">
-                    View Resume
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                <div class="py-5">
+                    <p>
+                        <span class="bold">Creative Specialist</span><br>
+                        Tata Consultancy Services | Feb 06 - Mar 07
+                    </p>
+                    <p>
+                        Delivered UX/UI creative solutions to digital services and products pertaining to various
+                        domains.
+                    </p>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Graphic/Visual Design</span>
+                    <span class="badge rounded-pill text-muted bg-light small p-2">Iconography</span>
+                </div>
+
+                <div class="text-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor" class="bi bi-file-text text-muted" viewBox="0 0 16 16">
+                        <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 
+                            1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 
+                            0 0 0 1-1V2a1 1 0 0 0-1-1"/>
                     </svg>
-                </a>
-
-                <a class="btn btn-outline-dark icon-link icon-link-hover my-3 mx-3" href="/static/docs/Sachin-Ghegade-Resume.pdf"
-                    download="Sachin-Ghegade-Resume">
-                    Download Resume
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    <a class="text-dark text-decoration-none" href="/static/docs/Sachin-Ghegade-Resume.pdf" target="_blank">
+                        view
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
                     </svg>
-                </a>
-
+                    <a class="text-dark text-decoration-none" href="/static/docs/Sachin-Ghegade-Resume.pdf" download="Sachin-Ghegade-Resume">
+                        download resume
+                    </a>
+                </div>
             </div>
 
-            <!-- Case Studies Section -->
-            <div class="case-studies" id="case-studies">
-                <a href="/static/templates/powertech.html"
-                    class="text-decoration-none fw-bolder case-study">
-                    <div class="row py-2 rounded-start rounded-end">
+            <!-- Work Section -->
+            <div class="regular" id="work">
+                <p class="medium bold smoke">WORK</p>
+                <a href="/static/templates/powertech.html" class="text-decoration-none">
+                    <div class="row rounded-start rounded-end py-2">
                         <div class="col-md-4">
                             <img class="rounded-start rounded-end" src="/static/images/powertech/powertech-hero.png">
                         </div>
-                        <div class="col-md-8">
-                            <p class="dark">
-                                <span class="fw-bolder icon-link icon-link-hover">
-                                    Powertech
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                    </svg>
-                                </span><br>
-                                <span class="text-body-secondary">Assest Performance Management</span>
-                            </p>
-                            <p class="dark fw-lighter">
-                                <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas nunc libero.</em>
+                        <div class="col-md-8 m-auto">
+                            <p class="text-dark">
+                                Asset performance management (APM) encompasses
+                                the capabilities of data capture, integration,
+                                visualisation, and analytics tied together for the
+                                explicit purpose of improving the reliability and
+                                availability of physical assets.
                             </p>
                         </div>
                     </div>
                 </a>
-                <a href="/static/templates/sajag.html"
-                    class="text-decoration-none fw-bolder case-study">
-                    <div class="row py-2 rounded-start rounded-end">
+                <a href="/static/templates/sajag.html" class="text-decoration-none">
+                    <div class="row rounded-start rounded-end py-2">
                         <div class="col-md-4">
                             <img class="rounded-start rounded-end" src="/static/images/sajag/sajag.png">
                         </div>
-                        <div class="col-md-8">
-                            <p class="dark">
-                                <span class="fw-bolder icon-link icon-link-hover">
-                                    Sajag Fintech
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                    </svg>
-                                </span><br>
-                                <span class="text-body-secondary">Financial Planning & Wealth Management</span>
-                            </p>
-                            <p class="dark fw-lighter">
-                                <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas nunc libero.</em>
+                        <div class="col-md-8 m-auto">
+                            <p class="text-dark">
+                                Wealth management advisory provides services to a
+                                wide array of clients ranging from affluent to high-
+                                net-worth. It is a discipline that incorporates
+                                structuring and planning wealth to assist in growing,
+                                preserving, and protecting wealth.
                             </p>
                         </div>
                     </div>
                 </a>
-                <a href="/static/templates/eatnjoy.html"
-                    class="text-decoration-none fw-bolder case-study">
-                    <div class="row py-2 rounded-start rounded-end">
+                <a href="/static/templates/eatnjoy.html" class="text-decoration-none">
+                    <div class="row rounded-start rounded-end py-2">
                         <div class="col-md-4">
                             <img class="rounded-start rounded-end" src="/static/images/eat-n-joy/eat-n-joy-hero.png">
                         </div>
-                        <div class="col-md-8">
-                            <p class="dark">
-                                <span class="fw-bolder icon-link icon-link-hover">
-                                    Eat n' Joy
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                    </svg>
-                                </span><br>
-                                <span class="text-body-secondary">Multi-cuisine Dining Chain</span>
-                            </p>
-                            <p class="dark fw-lighter">
-                                <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas nunc libero.</em>
+                        <div class="col-md-8 m-auto">
+                            <p class="text-dark">
+                                When a customer shares a pic on social media having
+                                them at your restaurant, it generates more value for
+                                your brand than when he likes one of your posts.
+                                Research shows that a fully engaged customer
+                                represents more percentage of revenue than average.
                             </p>
                         </div>
                     </div>
                 </a>
-                <a href="/static/templates/myride.html"
-                    class="text-decoration-none fw-bolder case-study">
-                    <div class="row py-2 rounded-start rounded-end">
+                <a href="/static/templates/myride.html" class="text-decoration-none">
+                    <div class="row rounded-start rounded-end py-2">
                         <div class="col-md-4">
                             <img class="rounded-start rounded-end" src="/static/images/my-ride/my-ride-hero.png">
                         </div>
-                        <div class="col-md-8">
-                            <p class="dark">
-                                <span class="fw-bolder icon-link icon-link-hover">
-                                    My Ride
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                    </svg>
-                                </span><br>
-                                <span class="text-body-secondary">Trust Your Trip</span>
-                            </p>
-                            <p class="dark fw-lighter">
-                                <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas nunc libero.</em>
+                        <div class="col-md-8 m-auto">
+                            <p class="text-dark">
+                                Smart public transportation offers passengers a
+                                convenient and efficient means of traveling and helps
+                                bus operators to consolidate fleet management,
+                                facilitate daily operations, improve safety and
+                                enhance the traveling experience.
                             </p>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <!-- Blog Section -->
-            <div class="blog" id="blog">
-                <a href="https://medium.com/@sachin.ghegade/customer-experience-vs-user-experience-4440c5c0bc49"
-                    class="blog-link text-decoration-none fw-bolder" target="_blank">
-                    <div class="row py-2 rounded-start rounded-end">
-                        <div class="col-md-4">
-                            <img class="rounded-start rounded-end" src="/static/images/blogs/cx-vs-ux.png">
-                        </div>
-                        <div class="col-md-8">
-                            <p class="dark">
-                                <span class="fw-bolder icon-link icon-link-hover">
-                                    CX vs UX
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                    </svg>
-                                </span><br>
-                                <span class="text-body-secondary">Medium</span>
-                            </p>
-                            <p class="dark fw-lighter">
-                                <em>Published on January 12, 2024</em>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/pulse/rhythm-colours-sachin-ghegade%3FtrackingId=zUSNNQSB%252F5rCNfYZxZsNBQ%253D%253D/?trackingId=zUSNNQSB%2F5rCNfYZxZsNBQ%3D%3D"
-                    class="blog-link text-decoration-none fw-bolder" target="_blank">
-                    <div class="row py-2 rounded-start rounded-end">
-                        <div class="col-md-4">
-                            <img class="rounded-start rounded-end" src="/static/images/blogs/rhythm.png">
-                        </div>
-                        <div class="col-md-8">
-                            <p class="dark">
-                                <span class="fw-bolder icon-link icon-link-hover">
-                                    The Rhythm of Colours
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                    </svg>
-                                </span><br>
-                                <span class="text-body-secondary">LinkedIn</span>
-                            </p>
-                            <p class="dark fw-lighter">
-                                <em>Published on October 21, 2020</em>
-                            </p>
-                        </div>
-                    </div>
+            <!-- Posts Section -->
+            <div class="regular" id="posts">
+                <p class="medium bold smoke">POSTS</p>
+                <hr>
+                <div class="post-link p-2">
+                    <a href="https://medium.com/@sachin.ghegade/customer-experience-vs-user-experience-4440c5c0bc49"
+                        class="text-decoration-none" target="_blank">
+                        <p class="text-dark">
+                            <span class="bold">Customer Experience vs User Experience</span><br>
+                            <span class="x-small text-muted">Medium</span>
+                        </p>
+                    </a>
+                </div>
+                <hr>
+                <div class="post-link p-2">
+                    <a href="https://www.linkedin.com/pulse/rhythm-colours-sachin-ghegade/?trackingId=yB9BKH0CSZWJWXdeQUp2DA%3D%3D"
+                        class="text-decoration-none" target="_blank">
+                        <p class="text-dark">
+                            <span class="bold">The rythm of colours</span><br>
+                            <span class="x-small text-muted">LinkedIn</span>
+                        </p>
+                    </a>
+                </div>
+                <hr>
+                <div class="post-link p-2">
+                    <a href="https://www.linkedin.com/posts/sachinghegade_user-experience-activity-6813155958857052160-_fDm?utm_source=share&utm_medium=member_desktop"
+                        class="text-decoration-none" target="_blank">
+                        <p class="text-dark">
+                            <span class="bold">User Experience</span><br>
+                            <span class="x-small text-muted">LinkedIn</span>
+                        </p>
+                    </a>
+                </div>
+                <hr>
+                <div class="post-link p-2">
+                    <a href="https://drive.google.com/drive/search?q=WCAG"
+                        class="text-decoration-none" target="_blank">
+                        <p class="text-dark">
+                            <span class="bold">WCAG (Web Content Accessibility Guidelines)</span><br>
+                            <span class="x-small text-muted">Document</span>
+                        </p>
+                    </a>
+                </div>
+                <hr>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="regular text-end pt-5" id="contact">
+                <a href="tel:+91 9960060177" class="text-decoration-none text-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="40" fill="currentColor" class="bi bi-telephone-fill text-muted" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 
+                            .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 
+                            1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                    <span class="px-3">+91 9960 060177</span>
                 </a>
             </div>
         </div>
@@ -391,7 +336,7 @@
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-expand-lg px-4">
             <a class="navbar-brand large" href="index.html">
-                <span class="large fw-bolder">Sachin</span><span class="large fw-lighter"> Ghegade</span>
+                <span class="bold">Sachin</span> Ghegade
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" 
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -400,332 +345,271 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#about-mb">ABOUT</span></a>
+                        <a class="nav-link" href="index.html#about-mobile">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#experience-mb">EXPERIENCE</a>
+                        <a class="nav-link" href="index.html#experience-mobile">EXPERIENCE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#case-studies-mb">CASE STUDIES</a>
+                        <a class="nav-link" href="index.html#work-mobile">WORK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#blog-mb">BLOG</a>
+                        <a class="nav-link" href="index.html#posts-mobile">POSTS</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <!-- Alert -->
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            This site is currently <strong>under development</strong>. So, some of the elements <strong>won't</strong> function properly. Sorry for inconvenience!
-        </div>
-
         <!-- About Section -->
-        <div class="about" id="about-mb">
+        <div class="regular" id="about-mobile">
             <p>
-                Hello, I'm Sachin - a design executor, back in 2006, I
-                decided to try into creating innovative solutions focusing
-                user Experience at a centre. <span class="fw-bolder">Fast-forward to today, and
-                I've had the privilege of building solutions for various
-                domains</span> they include Fintech, Loan Management,
-                Insurance, Digital Oil Fields, Performance Management,
-                Predictive Maintenance, Process Intelligence, Real Tinne
-                Performance, E-Commerce etc.
-                <br><br>
-                <span class="fw-bolder">My main focus these days is building products and
-                leading projects for our clients at Lentra as an
-                individual + lead contributor.</span> In my free time I've also
-                released an online documents that covers everything
-                you need to know about UX, Ulf Design Thinking, WCAG.
-                <br><br>
-                When I'm not at the computer, I'm usually do paintings,
-                listen Instrumental Music, Explore out with my wife and
-                two children in nature.
+                Hello, I'm Sachin - a design executor, back in 2006, I decided to try
+                into creating innovative solutions focusing <span class="bold">User Experience</span> as a
+                centre. Fast-forward to today, and I've had the privilege of building
+                solutions for various domains they include <span class="bold">BFSI</span> Loan Management,
+                Documentation, Administration, Insurance, <span class="bold">Manufacturing</span> Digital Oil
+                Fields, Performance Management, Predictive Maintenance, Process
+                Intelligence, Real Time Performance, E-Commerce etc. My main
+                focus these days is <span class="bold">building products and leading projects for our
+                clients at Lentra</span> as an individual + lead contributor. In my free time
+                I've also released an online documents that covers everything you
+                need to know about UX, IJI, Design Thinking, WCAG.
             </p>
         </div>
 
-        <hr>
-
         <!-- Experience Section -->
-        <div class="experience" id="experience-mb">
-            <div class="pb-3">
+        <div class="regular" id="experience-mobile">
+            <p class="medium bold smoke">EXPERIENCE</p>
+            <div class="pb-5">
                 <p>
-                    <span class="fw-bolder">Lead UX Designer | Lentra.AI</span><br>
-                    <span class="fw-lighter"><em>March 22 - Present</em></span>
+                    <span class="bold">Design Lead</span> (Manager - Product User Experience)<br>
+                    Lentra.AI | March 22 - Present
                 </p>
-                <ul>
-                    <li>
-                        Executing SaaS, Low Code-No Code
-                        platform from UX viewpoint by keeping
-                        lending customer journey and ecosystem
-                        at the center.
-                    </li>
-                    <li>
-                        Closely working with user and customer how they interact with the product
-                        and it's ecosystem from overall journey level down to the micro details;
-                        journeys focused Self Serve, Assisted, Account Aggregator, vKYC, eSign,
-                        DigiLocker, Dashboard, Portal Management, Form Administration, API
-                        Microsystems etc.
-                    </li>
-                    <li>
-                        Being a BFA artist my core is to follow primarily design principles and
-                        elements to make sure each solution makes an impact and smoothly
-                        interacts with the receiver (user) by following essentials like balance, contrast,
-                        emphasis, hierarchy, pattern, navigation, imagery, iconography etc.
-                    </li>
-                    <li>
-                        Good familiarity with frontend HTML, CSS and backend Dev structure
-                        proposing UX solution. Daily interaction with Product Owners, Project
-                        Managers, Business Analysts, Architects, Developers via Huddle, Stand-up.
-                        Active contribution into requirement gathering, User interviews of
-                        internal-external user.
-                    </li>
-                    <li>
-                        Ensuring overall design + design management process is streamlined.
-                        Leading the design through Why-Why analysis, WCAG-POUR standards while
-                        identifying continuous improvement opportunities for Web, Native and
-                        Hybrid Applications. JIRA board, Tempo, Agile + Design Sprint are my
-                        day-to-day collaborators to keep work efficient.
-                    </li>
-                </ul>
-                <span class="badge rounded-pill bg-light text-dark x-small">Topic 1</span>
-                <span class="badge rounded-pill bg-light text-dark x-small">Topic 2</span>
-                <span class="badge rounded-pill bg-light text-dark x-small">Topic 3</span>
+                <p>
+                    Design Lead for B2B/ B2C cloud-based fintech lending digital products, used as digital
+                    financial technology including APIs helps lenders make faster, more informed decisions.
+                    Executing SaaS, Low Code-No Code platform from UX viewpoint by keeping lending
+                    customer journey and ecosystem at the centre.
+                </p>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Personal Loan</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">BNPL</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Consumer Durable</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Loan Management</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Credit Card</span>
             </div>
             
-            <div class="py-3">
-                <p class="fw-bolder">
-                    <span class="fw-bolder">Principal Designer | Foolproof</span><br>
-                    <span class="fw-lighter"><em>September 21 - February 22</em></span>
+            <div class="py-5">
+                <p>
+                    <span class="bold">Principal Designer</span><br>
+                    Foolproof | Sep 21 - Feb 22
                 </p>
-                <ul>
-                    <li>
-                        Led the UX design process for Home Insurance, E-Commerce projects
-                        resulting user engagement with positive increase. Followed Double Diamond
-                        methodologies; Discover-Define-Design-Deliver, alongwith design systems.
-                    </li>
-                </ul>
-                <span class="badge rounded-pill bg-light text-dark x-small">Topic 1</span>
-                <span class="badge rounded-pill bg-light text-dark x-small">Topic 2</span>
-                <span class="badge rounded-pill bg-light text-dark x-small">Topic 3</span>
+                <p>
+                    Active participation was to come up with a solution for Digital Insurance ecosystem
+                    product, an efficient solution allowing businesses to actively engage with customers and
+                    offer them convenient services. Native mobile application, Home Insurance digital product
+                    offered customers a convenient service.Simplified overall experience and streamlined
+                    journey to achieve the goal in a minimum timeline. The product is primarily targeted to run
+                    on mobile with iOS and Android OS.
+                </p>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Branding & Identity</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Product Design</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Double Diamond</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">User Research</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Wireframing</span>
             </div>
             
-            <div class="py-3">
-                <p class="fw-bolder">
-                    <span class="fw-bolder">Designer | Hitachi Vantara</span><br>
-                    <span class="fw-lighter"><em>June 09 - August 21</em></span>
+            <div class="py-5">
+                <p>
+                    <span class="bold">Design Lead</span> (Manager - Specialised Services)<br>
+                    Hitachi Vantara | Jun 09 - Aug 21
                 </p>
-                <ul>
-                    <li>
-                        Began with first and single designer to CoP lead who established and derived
-                        Hitachi India Experience Design vertical. Facilitated workshops how design
-                        translates to code while understanding of frontend and backend code.
-                    </li>
-                    <li>
-                        Demonstrated strength in delivering through all stages of product
-                        development and drived key partnerships from initial ideation to shipping
-                        and supporting multiple teams and their needs.
-                    </li>
-                    <li>
-                        Gathered design sprint, backlog items, budgeting, forecasting,
-                        documentation, business flows, and lessons learned documents captured
-                        in retrospectives.
-                    </li>
-                </ul>
-                <span class="badge rounded-pill bg-light text-dark x-small">Topic 1</span>
-                <span class="badge rounded-pill bg-light text-dark x-small">Topic 2</span>
-                <span class="badge rounded-pill bg-light text-dark x-small">Topic 3</span>
+                <p>
+                    Began with single product/service designer of the company to UX/UI Design COE lead.
+                    Responsible for a drive India design team and championing end-to-end / cross-device
+                    product experiences. Followed primary role for Hitachi Digital/ Social Innovation and Digital
+                    Transformation products and their customers; specific to IoT, Logistics, Data Management,
+                    eCommerce, BFSI, Retail, Manufacturing, Oil and Gas, Automobiles, Healthcare,
+                    Government, and Education.
+                </p>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Product Design</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Service Design</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Team Management</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Client Facing</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Brand Management</span>
             </div>
 
+            <div class="py-5">
+                <p>
+                    <span class="bold">Sr. Designer</span><br>
+                    Hexaware Technologies | Sep 07 - May 09
+                </p>
+                <p>
+                    Responsible for overall UX/UI activities and deliverables for internal and external
+                    stakeholders specialised in BFSI & Securities domains.
+                </p>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Product Design</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Graphic/Visual Design</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">CSS Standardisation</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Requirement Analysis</span>
+            </div>
 
-            <a class="btn btn-sm btn-dark icon-link icon-link-hover my-3" href="/static/docs/Sachin-Ghegade-Resume.pdf">
-                View Resume
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            <div class="py-5">
+                <p>
+                    <span class="bold">Creative Specialist</span><br>
+                    Tata Consultancy Services | Feb 06 - Mar 07
+                </p>
+                <p>
+                    Delivered UX/UI creative solutions to digital services and products pertaining to various
+                    domains.
+                </p>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Graphic/Visual Design</span>
+                <span class="badge rounded-pill text-muted bg-light small p-2">Iconography</span>
+            </div>
+
+            <div class="text-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor" class="bi bi-file-text text-muted" viewBox="0 0 16 16">
+                    <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 
+                        1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 
+                        0 0 0 1-1V2a1 1 0 0 0-1-1"/>
                 </svg>
-            </a>
-
-            <a class="btn btn-sm btn-outline-dark icon-link icon-link-hover my-3 mx-2" href="/static/docs/Sachin-Ghegade-Resume.pdf"
-                download="Sachin-Ghegade-Resume">
-                Download Resume
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                <a class="text-dark text-decoration-none" href="/static/docs/Sachin-Ghegade-Resume.pdf" target="_blank">
+                    view
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
                 </svg>
-            </a>
-
+                <a class="text-dark text-decoration-none" href="/static/docs/Sachin-Ghegade-Resume.pdf" download="Sachin-Ghegade-Resume">
+                    download resume
+                </a>
+            </div>
         </div>
 
-        <hr>
-
-        <!-- Case Studies Section -->
-        <div class="case-studies" id="case-studies-mb">
-            <a href="/static/templates/powertech.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
+        <!-- Work Section -->
+        <div class="regular" id="work-mobile">
+            <p class="medium bold smoke">WORK</p>
+            <a href="/static/templates/powertech.html" class="text-decoration-none">
+                <div class="row rounded-start rounded-end py-2">
                     <div class="col-md-4">
                         <img class="rounded-start rounded-end" src="/static/images/powertech/powertech-hero.png">
                     </div>
-                    <div class="col-md-8">
-                        <p class="dark">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                Powertech
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Assest Performance Management</span>
-                        </p>
-                        <p class="dark fw-lighter">
-                            <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas nunc libero.</em>
+                    <div class="col-md-8 m-auto py-2">
+                        <p class="text-dark">
+                            Asset performance management (APM) encompasses
+                            the capabilities of data capture, integration,
+                            visualisation, and analytics tied together for the
+                            explicit purpose of improving the reliability and
+                            availability of physical assets.
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="/static/templates/sajag.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
+            <a href="/static/templates/sajag.html" class="text-decoration-none">
+                <div class="row rounded-start rounded-end py-2">
                     <div class="col-md-4">
                         <img class="rounded-start rounded-end" src="/static/images/sajag/sajag.png">
                     </div>
-                    <div class="col-md-8">
-                        <p class="dark">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                Sajag Fintech
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Financial Planning & Wealth Management</span>
-                        </p>
-                        <p class="dark fw-lighter">
-                            <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas nunc libero.</em>
+                    <div class="col-md-8 m-auto py-2">
+                        <p class="text-dark">
+                            Wealth management advisory provides services to a
+                            wide array of clients ranging from affluent to high-
+                            net-worth. It is a discipline that incorporates
+                            structuring and planning wealth to assist in growing,
+                            preserving, and protecting wealth.
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="/static/templates/eatnjoy.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
+            <a href="/static/templates/eatnjoy.html" class="text-decoration-none">
+                <div class="row rounded-start rounded-end py-2">
                     <div class="col-md-4">
                         <img class="rounded-start rounded-end" src="/static/images/eat-n-joy/eat-n-joy-hero.png">
                     </div>
-                    <div class="col-md-8">
-                        <p class="dark">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                Eat n' Joy
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Multi-cuisine Dining Chain</span>
-                        </p>
-                        <p class="dark fw-lighter">
-                            <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas nunc libero.</em>
+                    <div class="col-md-8 m-auto py-2">
+                        <p class="text-dark">
+                            When a customer shares a pic on social media having
+                            them at your restaurant, it generates more value for
+                            your brand than when he likes one of your posts.
+                            Research shows that a fully engaged customer
+                            represents more percentage of revenue than average.
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="/static/templates/myride.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
+            <a href="/static/templates/myride.html" class="text-decoration-none">
+                <div class="row rounded-start rounded-end py-2">
                     <div class="col-md-4">
                         <img class="rounded-start rounded-end" src="/static/images/my-ride/my-ride-hero.png">
                     </div>
-                    <div class="col-md-8">
-                        <p class="dark">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                My Ride
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Trust Your Trip</span>
-                        </p>
-                        <p class="dark fw-lighter">
-                            <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas nunc libero.</em>
+                    <div class="col-md-8 m-auto py-2">
+                        <p class="text-dark">
+                            Smart public transportation offers passengers a
+                            convenient and efficient means of traveling and helps
+                            bus operators to consolidate fleet management,
+                            facilitate daily operations, improve safety and
+                            enhance the traveling experience.
                         </p>
                     </div>
                 </div>
             </a>
         </div>
 
-        <hr>
-
-        <!-- Blog Section -->
-        <div class="blog" id="blog-mb">
-            <a href="https://medium.com/@sachin.ghegade/customer-experience-vs-user-experience-4440c5c0bc49"
-                class="blog-link text-decoration-none fw-bolder" target="_blank">
-                <div class="row py-2 rounded-start rounded-end">
-                    <div class="col-md-4">
-                        <img class="rounded-start rounded-end" src="/static/images/blogs/cx-vs-ux.png">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="dark">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                CX vs UX
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Medium</span>
-                        </p>
-                        <p class="dark fw-lighter">
-                            <em>Published on January 12, 2024</em>
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/pulse/rhythm-colours-sachin-ghegade%3FtrackingId=zUSNNQSB%252F5rCNfYZxZsNBQ%253D%253D/?trackingId=zUSNNQSB%2F5rCNfYZxZsNBQ%3D%3D"
-                class="blog-link text-decoration-none fw-bolder" target="_blank">
-                <div class="row py-2 rounded-start rounded-end">
-                    <div class="col-md-4">
-                        <img class="rounded-start rounded-end" src="/static/images/blogs/rhythm.png">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="dark">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                The Rhythm of Colours
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">LinkedIn</span>
-                        </p>
-                        <p class="dark fw-lighter">
-                            <em>Published on October 21, 2020</em>
-                        </p>
-                    </div>
-                </div>
-            </a>
+        <!-- Posts Section -->
+        <div class="regular" id="posts-mobile">
+            <p class="medium bold smoke">POSTS</p>
+            <hr>
+            <div class="post-link p-2">
+                <a href="https://medium.com/@sachin.ghegade/customer-experience-vs-user-experience-4440c5c0bc49"
+                    class="text-decoration-none" target="_blank">
+                    <p class="text-dark">
+                        <span class="bold">Customer Experience vs User Experience</span><br>
+                        <span class="x-small text-muted">Medium</span>
+                    </p>
+                </a>
+            </div>
+            <hr>
+            <div class="post-link p-2">
+                <a href="https://www.linkedin.com/pulse/rhythm-colours-sachin-ghegade/?trackingId=yB9BKH0CSZWJWXdeQUp2DA%3D%3D"
+                    class="text-decoration-none" target="_blank">
+                    <p class="text-dark">
+                        <span class="bold">The rythm of colours</span><br>
+                        <span class="x-small text-muted">LinkedIn</span>
+                    </p>
+                </a>
+            </div>
+            <hr>
+            <div class="post-link p-2">
+                <a href="https://www.linkedin.com/posts/sachinghegade_user-experience-activity-6813155958857052160-_fDm?utm_source=share&utm_medium=member_desktop"
+                    class="text-decoration-none" target="_blank">
+                    <p class="text-dark">
+                        <span class="bold">User Experience</span><br>
+                        <span class="x-small text-muted">LinkedIn</span>
+                    </p>
+                </a>
+            </div>
+            <hr>
+            <div class="post-link p-2">
+                <a href="https://drive.google.com/drive/search?q=WCAG"
+                    class="text-decoration-none" target="_blank">
+                    <p class="text-dark">
+                        <span class="bold">WCAG (Web Content Accessibility Guidelines)</span><br>
+                        <span class="x-small text-muted">Document</span>
+                    </p>
+                </a>
+            </div>
+            <hr>
         </div>
 
-        <hr>
-
-        <!-- Contact -->
-        <div class="contact row justify-content-center">
-            <div class="col-sm-12 text-center pb-3">
-                <p class="medium fw-bolder">GET IN TOUCH</p>
-            </div>
-            <div class="col-2 text-center">
-                <a href="tel:+91 9960060177">
-                    <img class="contact-icon" src="/static/images/phone.png">
-                </a>
-            </div>
-            <div class="col-2 text-center">
-                <a href="mailto:sachin.ghegade@gmail.com">
-                    <img class="contact-icon" src="/static/images/email.png">
-                </a>
-            </div>
-            <div class="col-2 text-center">
-                <a href="https://www.linkedin.com/in/sachinghegade/" target="_blank">
-                    <img class="contact-icon" src="/static/images/linkedin.png">
-                </a>
-            </div>
-            <div class="col-2 text-center">
-                <a href="/static/docs/Sachin-Ghegade-Resume.pdf" download="Sachin-Ghegade-Resume">
-                    <img class="contact-icon" src="/static/images/download.png">
-                </a>
-            </div>
+        <!-- Contact Section -->
+        <div class="regular text-center pt-5" id="contact-mobile">
+            <a href="tel:+91 9960060177" class="text-decoration-none text-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="40" fill="currentColor" class="bi bi-telephone-fill text-muted" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 
+                        .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 
+                        1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                <span class="px-3">+91 9960 060177</span>
+            </a>
         </div>
     </div>
 

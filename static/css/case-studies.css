@@ -1,0 +1,183 @@
+/* Smartphone Screens */
+@media only screen and (max-width: 640px) {
+    body {
+        padding: 20% 8%;
+    }
+
+    /* Navigation Bar */
+    #navigation-bar {
+        background-color: white;
+        padding: 0% 5%;
+    }
+
+    #navigation-bar .collapse {
+        justify-content: end;
+    }
+
+    #navigation-bar .nav-item:hover {
+        font-weight: 900;
+    }
+    
+    /* Case Study */
+    #case-study .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .case-study-photo-mobile {
+        width: 100%;
+        height: 100%;
+    }
+
+    .case-study-photo, .main-link {
+        display: none;
+    }
+
+    /* Contact */
+    #contact {
+        text-align: center;
+    }
+}
+
+/* iPad Screens */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    body {
+        padding: 8% 8%;
+    }
+
+    /* Navigation Bar */
+    #navigation-bar {
+        background-color: white;
+        padding: 0% 8%;
+    }
+
+    #navigation-bar .collapse {
+        justify-content: end;
+    }
+
+    #navigation-bar .collapse .nav-item {
+        margin: 0px 10px;
+    }
+
+    #navigation-bar .nav-item:hover {
+        font-weight: 900;
+    }
+    
+    /* Case Study */
+    #case-study .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .case-study-photo-mobile {
+        width: 100%;
+        height: 100%;
+    }
+
+    .case-study-photo, .main-link {
+        display: none;
+    }
+
+    /* Contact */
+    #contact {
+        text-align: center;
+    }
+}
+
+/* Smaller Laptop Screens */
+@media only screen and (min-width: 991px) and (max-width: 1280px) {
+    body {
+        padding: 8% 8%;
+    }
+
+    /* Navigation Bar */
+    #navigation-bar {
+        background-color: white;
+        padding: 0% 8%;
+    }
+
+    #navigation-bar .collapse {
+        justify-content: end;
+    }
+
+    #navigation-bar .collapse .nav-item {
+        margin: 0px 10px;
+    }
+
+    #navigation-bar .nav-item:hover {
+        font-weight: 900;
+    }
+    
+    /* Case Study */
+    #case-study .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .case-study-photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .case-study-photo-mobile, .mobile-link {
+        display: none;
+    }
+
+    /* Contact */
+    #contact {
+        text-align: end;
+    }
+}
+
+/* Regular Laptops and Television Screens */
+@media only screen and (min-width: 1281px) {
+    body {
+        padding: 6% 8%;
+    }
+
+    /* Navigation Bar */
+    #navigation-bar {
+        background-color: white;
+        padding: 0% 8%;
+    }
+
+    #navigation-bar .collapse {
+        justify-content: end;
+    }
+
+    #navigation-bar .collapse .nav-item {
+        margin: 0px 10px;
+    }
+
+    #navigation-bar .nav-item:hover {
+        font-weight: 900;
+    }
+    
+    /* Case Study */
+    #case-study .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .case-study-photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .case-study-photo-mobile, .mobile-link {
+        display: none;
+    }
+
+    /* Contact */
+    #contact {
+        text-align: end;
+    }
+}

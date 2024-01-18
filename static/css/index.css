@@ -1,8 +1,12 @@
 /* Smartphone Screens */
 @media only screen and (max-width: 640px) {
-    /* Template */
+    /* Layout */
     body {
-        padding: 20% 5%;
+        padding: 20% 10%;
+    }
+
+    #experience-mobile, #work-mobile, #posts-mobile {
+        margin-top: 20%;
     }
 
     /* Navigation Bar */
@@ -10,66 +14,29 @@
         background-color: white;
     }
 
-    .navbar hr {
-        width: 100px;
-        transition: width 1s;
+    /* Experience Section */
+    #experience-mobile a:hover {
+        font-weight: 900;
     }
 
-    .nav-link:hover {
-        font-weight: bolder;
-
-        hr {
-            border-top: 2px solid #0F0F0F;
-            width: 150px;
-        }
-    }
-
-    /* Contact */
-    .contact {
-        margin: auto;
-    }
-
-    .contact-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    /* Case Studies */
-    .case-study .row:hover {
+    /* Work and Posts Section */
+    #work-mobile .row:hover, .post-link:hover {
         transform: scale(1.02);
         transition: 1s;
-        background-color: whitesmoke;
+        background-color: #f8f9fa;
     }
 
-    .case-study .row {
+    #work-mobile .row, #posts-mobile .row {
         margin-bottom: 5%;
     }
 
-    .case-study img {
+    #work-mobile img, #posts-mobile img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 
-    /* Blog */
-    .blog img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .blog .row {
-        margin-bottom: 5%;
-    }
-
-    .blog-link .row:hover {
-        transform: scale(1.02);
-        transition: 1s;
-        background-color: whitesmoke;
-    }
-
-    .experience, .case-studies, .blog {
-        margin-top: 10%;
-    }
-
+    /* Disabled Elements */
     .main-view {
         display: none;
     }
@@ -77,9 +44,13 @@
 
 /* iPad Screens */
 @media only screen and (min-width: 641px) and (max-width: 991px) {
-    /* Template */
+    /* Layout */
     body {
-        padding: 15% 5%;
+        padding: 20% 10%;
+    }
+
+    #experience-mobile, #work-mobile, #posts-mobile {
+        margin-top: 10%;
     }
 
     /* Navigation Bar */
@@ -87,66 +58,29 @@
         background-color: white;
     }
 
-    .navbar hr {
-        width: 100px;
-        transition: width 1s;
+    /* Experience Section */
+    #experience-mobile a:hover {
+        font-weight: 900;
     }
 
-    .nav-link:hover {
-        font-weight: bolder;
-
-        hr {
-            border-top: 2px solid #0F0F0F;
-            width: 150px;
-        }
-    }
-
-    /* Contact */
-    .contact {
-        margin: auto;
-    }
-
-    .contact-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    /* Case Studies */
-    .case-study .row:hover {
+    /* Work and Posts Section */
+    #work-mobile .row:hover, .post-link:hover {
         transform: scale(1.02);
         transition: 1s;
-        background-color: whitesmoke;
+        background-color: #f8f9fa;
     }
 
-    .case-study .row {
+    #work-mobile .row, #posts-mobile .row {
         margin-bottom: 5%;
     }
 
-    .case-study img {
+    #work-mobile img, #posts-mobile img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 
-    /* Blog */
-    .blog img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .blog .row {
-        margin-bottom: 5%;
-    }
-
-    .blog-link .row:hover {
-        transform: scale(1.02);
-        transition: 1s;
-        background-color: whitesmoke;
-    }
-
-    .experience, .case-studies, .blog {
-        margin-top: 10%;
-    }
-
+    /* Disabled Elements */
     .main-view {
         display: none;
     }
@@ -154,101 +88,7 @@
 
 /* Smaller Laptop Screens */
 @media only screen and (min-width: 991px) and (max-width: 1280px) {
-    /* Template */
-    body {
-        padding: 2% 4%;
-    }
-
-    .left-column {
-        position: fixed;
-    }
-    
-    .right-column {
-        position: relative;
-        left: 50%;
-    }
-
-    /* Navigation Bar */
-    .navbar {
-        margin-top: 5%;
-    }
-
-    .navbar hr {
-        width: 100px;
-        transition: width 1s;
-    }
-
-    .nav-link:hover {
-        font-weight: bolder;
-
-        hr {
-            border-top: 2px solid #0F0F0F;
-            width: 150px;
-        }
-    }
-
-    /* Contact */
-    .contact {
-        position: fixed;
-        bottom: 0;
-        padding: 2.5% 0%;
-    }
-
-    .contact-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .contact-icon:hover {
-        opacity: 0.8;
-        transform: scale(1.1);
-        transition: 1s;
-    }
-
-    /* Case Studies */
-    .case-study .row:hover {
-        transform: scale(1.02);
-        transition: 1s;
-        background-color: whitesmoke;
-    }
-
-    .case-study .row {
-        margin-bottom: 5%;
-    }
-
-    .case-study img {
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Blog */
-    .blog img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .blog .row {
-        margin-bottom: 5%;
-    }
-
-    .blog-link .row:hover {
-        transform: scale(1.02);
-        transition: 1s;
-        background-color: whitesmoke;
-    }
-
-    .experience, .case-studies, .blog {
-        margin-top: 10%;
-    }
-
-    .mobile-view {
-        display: none;
-    }
-}
-
-/* Regular Laptops and Television Screens */
-@media only screen and (min-width: 1281px) {
-    /* Template */
+    /* Layout */
     body {
         padding: 5% 10%;
     }
@@ -259,21 +99,25 @@
     
     .right-column {
         position: relative;
-        left: 50%;
+        left: 40%;
+    }
+
+    #experience, #work, #posts {
+        margin-top: 10%;
     }
 
     /* Navigation Bar */
-    .navbar {
-        margin-top: 5%;
+    #vertical-navbar {
+        margin-top: 10%;
     }
 
-    .navbar hr {
+    #vertical-navbar hr {
         width: 100px;
         transition: width 1s;
     }
 
-    .nav-link:hover {
-        font-weight: bolder;
+    #vertical-navbar .nav-link:hover {
+        font-family: "San Francisco Bold";
 
         hr {
             border-top: 2px solid #0F0F0F;
@@ -281,60 +125,96 @@
         }
     }
 
-    /* Contact */
-    .contact {
+    /* Experience Section */
+    #experience a:hover {
+        font-weight: 900;
+    }
+
+    /* Work and Posts Section */
+    #work .row:hover, .post-link:hover {
+        transform: scale(1.02);
+        transition: 1s;
+        background-color: #f8f9fa;
+    }
+
+    #work .row, #posts .row {
+        margin-bottom: 5%;
+    }
+
+    #work img, #posts img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Disabled Elements */
+    .mobile-view {
+        display: none;
+    }
+}
+
+/* Regular Laptops and Television Screens */
+@media only screen and (min-width: 1281px) {
+    /* Layout */
+    body {
+        padding: 5% 10%;
+    }
+
+    .left-column {
         position: fixed;
-        bottom: 0;
-        padding: 2.5% 0%;
+    }
+    
+    .right-column {
+        position: relative;
+        left: 40%;
     }
 
-    .contact-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .contact-icon:hover {
-        opacity: 0.8;
-        transform: scale(1.1);
-        transition: 1s;
-    }
-
-    /* Case Studies */
-    .case-study .row:hover {
-        transform: scale(1.02);
-        transition: 1s;
-        background-color: whitesmoke;
-    }
-
-    .case-study .row {
-        margin-bottom: 5%;
-    }
-
-    .case-study img {
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Blog */
-    .blog img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .blog .row {
-        margin-bottom: 5%;
-    }
-
-    .blog-link .row:hover {
-        transform: scale(1.02);
-        transition: 1s;
-        background-color: whitesmoke;
-    }
-
-    .experience, .case-studies, .blog {
+    #experience, #work, #posts {
         margin-top: 10%;
     }
 
+    /* Navigation Bar */
+    #vertical-navbar {
+        margin-top: 10%;
+    }
+
+    #vertical-navbar hr {
+        width: 100px;
+        transition: width 1s;
+    }
+
+    #vertical-navbar .nav-link:hover {
+        font-family: "San Francisco Bold";
+
+        hr {
+            border-top: 2px solid #0F0F0F;
+            width: 150px;
+        }
+    }
+
+    /* Experience Section */
+    #experience a:hover {
+        font-weight: 900;
+    }
+
+    /* Work and Posts Section */
+    #work .row:hover, .post-link:hover {
+        transform: scale(1.02);
+        transition: 1s;
+        background-color: #f8f9fa;
+    }
+
+    #work .row, #posts .row {
+        margin-bottom: 5%;
+    }
+
+    #work img, #posts img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Disabled Elements */
     .mobile-view {
         display: none;
     }

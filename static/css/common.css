@@ -1,104 +1,113 @@
-/* Font Configurations */
-.montserrat {
-    font-family: 'Montserrat', sans-serif;
+@font-face {
+    font-family: "San Francisco Light";
+    src: url(/static/font/San-Francisco-Light.otf);
 }
 
-.inconsolata {
-    font-family: 'Inconsolata', monospace;
+@font-face {
+    font-family: "San Francisco Bold";
+    src: url(/static/font/San-Francisco-Bold.otf);
 }
 
-.dark {
-    color: #0F0F0F;
+.bold {
+    font-family: "San Francisco Bold";
 }
 
-.light {
-    color: #F0F0F0;
+.smoke {
+    color: #848884;
 }
 
-.view-btn {
-    text-decoration: none;
-    color: #0F0F0F;
+body {
+    font-family: "San Francisco Light";
 }
-
-.view-btn:hover {
-    color: #0F0F0F;
-    font-weight: bolder;
-}
-
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 /* Smartphone Screens */
 @media only screen and (max-width: 640px) {
+    .x-large {
+        font-size: 36px;
+    }
+
     .large {
-        font-size: 25px;
+        font-size: 30px;
     }
     
     .medium {
-        font-size: 20px;
+        font-size: 16px;
     }
 
-    .small {
-        font-size: 20px;
+    .regular {
+        font-size: 14px;
     }
     
-    .x-small {
+    .small {
         font-size: 10px;
     }
 }
 
 /* iPad Screens */
 @media only screen and (min-width: 641px) and (max-width: 991px) {
+    .x-large {
+        font-size: 42px;
+    }
+
     .large {
-        font-size: 30px;
+        font-size: 34px;
     }
     
     .medium {
-        font-size: 20px;
+        font-size: 16px;
     }
 
-    .small {
-        font-size: 20px;
+    .regular {
+        font-size: 14px;
     }
     
-    .x-small {
-        font-size: 12px;
+    .small {
+        font-size: 10px;
     }
 }
 
 /* Smaller Laptop Screens */
 @media only screen and (min-width: 991px) and (max-width: 1280px) {
+    .x-large {
+        font-size: 45px;
+    }
+
     .large {
-        font-size: 40px;
+        font-size: 36px;
     }
     
     .medium {
-        font-size: 25px;
+        font-size: 18px;
     }
 
-    .small {
-        font-size: 20px;
+    .regular {
+        font-size: 16px;
     }
     
-    .x-small {
-        font-size: 13px;
+    .small {
+        font-size: 12px;
     }
 }
 
 /* Regular Laptops and Television Screens */
 @media only screen and (min-width: 1281px) {
-    .large {
+    .x-large {
         font-size: 50px;
+    }
+
+    .large {
+        font-size: 40px;
     }
     
     .medium {
-        font-size: 35px;
-    }
-
-    .small {
         font-size: 20px;
     }
+
+    .regular {
+        font-size: 18px;
+    }
     
-    .x-small {
-        font-size: 15px;
+    .small {
+        font-size: 14px;
     }
 }

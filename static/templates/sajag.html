@@ -12,373 +12,334 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-
     <!-- CSS -->
-    <link href="/static/css/sajag.css" rel="stylesheet">
+    <link href="/static/css/case-studies.css" rel="stylesheet">
     <link href="/static/css/common.css" rel="stylesheet">
 </head>
-<body class="montserrat dark">
+<body>
     <!-- Navigation Bar -->
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg" id="navigation-bar">
         <a class="navbar-brand large" href="../../index.html">
-            <span class="large fw-bolder">Sachin</span><span class="large fw-lighter"> Ghegade</span>
+            <span class="bold">Sachin</span> Ghegade
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" 
             aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item my-1">
-                    <a class="btn btn-dark fw-bolder" href="../../index.html" role="button">HOME</a>
+                <li class="nav-item">
+                    <a class="nav-link main-link" href="../../index.html#about">ABOUT</a>
+                    <a class="nav-link mobile-link" href="../../index.html#about-mobile">ABOUT</a>
                 </li>
-                <li class="nav-item my-1">
-                    <a class="btn btn-outline-dark fw-bolder" href="/static/docs/Sachin-Ghegade-Resume.pdf" role="button" download="Sachin-Ghegade-Resume">
-                        DOWNLOAD RESUME
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link main-link" href="../../index.html#experience">EXPERIENCE</a>
+                    <a class="nav-link mobile-link" href="../../index.html#experience-mobile">EXPERIENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-link" href="../../index.html#work">WORK</a>
+                    <a class="nav-link mobile-link" href="../../index.html#work-mobile">WORK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-link" href="../../index.html#posts">POSTS</a>
+                    <a class="nav-link mobile-link" href="../../index.html#posts-mobile">POSTS</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- More Case Studies -->
-    <div class="first-suggestion row">
-        <p class="fw-bolder small">More Case Studies</p>
-        <div class="col-md-4">
-            <a href="/static/templates/powertech.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
-                    <div class="col-md-4">
-                        <img class="rounded-start rounded-end" src="/static/images/powertech/powertech-hero.png">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="dark text-truncate">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                Powertech
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Assest Performance Management</span>
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="/static/templates/eatnjoy.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
-                    <div class="col-md-4">
-                        <img class="rounded-start rounded-end" src="/static/images/eat-n-joy/eat-n-joy-hero.png">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="dark text-truncate">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                Eat n' Joy
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Multi-cuisine Dining Chain</span>
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="/static/templates/myride.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
-                    <div class="col-md-4">
-                        <img class="rounded-start rounded-end" src="/static/images/my-ride/my-ride-hero.png">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="dark text-truncate">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                My Ride
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Trust Your Trip</span>
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
+    <!-- Other Case Studies Section -->
+    <div class="regular bold py-2" id="other-case-studies">
+        <a href="../../index.html#work" class="text-decoration-none text-dark icon-link icon-link-hover main-link"
+            style="--bs-icon-link-transform: translate3d(-.125rem, 0, 0);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 
+                    .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>
+            Other Case Studies
+        </a>
+        <a href="../../index.html#work-mobile" class="text-decoration-none text-dark icon-link icon-link-hover mobile-link"
+            style="--bs-icon-link-transform: translate3d(-.125rem, 0, 0);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 
+                    .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>
+            Other Case Studies
+        </a>
     </div>
 
-    <!-- Case Study -->
-    <div class="card mb-3">
-        <img class="card-img-top" src="/static/images/sajag/sajag.png" alt="Card image cap">
+    <!-- Case Study Section-->
+    <div class="card" id="case-study">
+        <img class="card-img-top" src="/static/images/sajag/sajag-hero-banner.png" alt="Card Image Cap">
         <div class="card-body">
-            <p>
-                <span class="large fw-bolder">Sajag Fintech</span><br>
-                <span class="medium fw-lighter text-body-secondary">Financial Planning & Wealth Management</span>
-            </p>
-            <p class="fw-bolder small mt-5">Overview</p>
-            <p>
+            <p class="medium bold smoke">OVERVIEW</p>
+            <p class="regular">
                 Sajag Financial Services-Sajag Securities is a well-diversified firm offering a range of financial products and services founded in 1995, 
                 a member of the National Stock Exchange and the Bombay Stock Exchange. It is the depository participant of NSDL and CDSL & a Mutual Fund Distributor. 
                 Market leader in retail broking with 31k + individual client base
             </p>
-
-            <p class="fw-bolder small mt-5">Key Requirements</p>
-            <ul>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="medium bold smoke">KEY REQUIREMENTS</p>
+                    <ul class="regular">
+                        <li>
+                            Increase Customer Base
+                        </li>
+                        <li>
+                            Increase Efficiency
+                        </li>
+                        <li>
+                            Enable Tracking
+                        </li>
+                        <li>
+                            Reduce Training Requirements
+                        </li>
+                    </ul>
+                    <p class="case-study-photo mt-5">
+                        <em>
+                            (<span class="bold">Note: </span>You can zoom and view the below images in new tab. To open the images in new tab click on them)
+                        </em>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-1.png">
+                    <a href="../images/sajag/sajag-1.png" target="_blank">
+                        <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-1.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">INFRASTRUCTURE & LOGISTICS</p>
+            <ul class="regular">
                 <li>
-                    Increase Customer Base
-                </li>
-                <li>
-                    Increase Efficiency
-                </li>
-                <li>
-                    Enable Tracking
-                </li>
-                <li>
-                    Reduce Training Requirements
-                </li>
-            </ul>
-
-            <p class="fw-bolder small mt-5">Infrastructure & Logistics</p>
-            <ul>
-                <li>
-                    <b>What does the product do?</b><br>
+                    <span class="bold">What does the product do?</span><br>
                     Sajag provides Financial Advisory.
                 </li>
                 <br>
 
                 <li>
-                    <b>What do you want it to do?</b><br>
+                    <span class="bold">What do you want it to do?</span><br>
                     Explore and provide the user-centric solution that should fulfill the requirements.
                 </li>
                 <br>
 
                 <li>
-                    <b>Do the business goals support the user goals?</b><br>
+                    <span class="bold">Do the business goals support the user goals?</span><br>
                     In the current scenario at a minimum level.
                 </li>
                 <br>
 
                 <li>
-                    <b>Where / When / How / Why /How often do they use it?</b><br>
+                    <span class="bold">Where / When / How / Why /How often do they use it?</span><br>
                     Access frequency is low to high, 24X7.
                 </li>
                 <br>
 
                 <li>
-                    <b>Are there any special needs of the user I should be aware of when designing?
-                        <br>(areas of limited connectivity/ less tech-savvy/ language/ desktop-only etc.)</b><br>
+                    <span class="bold">Are there any special needs of the user I should be aware of when designing?
+                        <br>(areas of limited connectivity/ less tech-savvy/ language/ desktop-only etc.)</span><br>
                     Mobile application is primary, language is targeted global English as of now.
                 </li>
                 <br>
 
                 <li>
-                    <b>Are there any special needs of the client I should be aware of when designing
-                    <br>(Relationship with previous contractors sensitive language/ not easily available etc.)</b><br>
+                    <span class="bold">Are there any special needs of the client I should be aware of when designing
+                    <br>(Relationship with previous contractors sensitive language/ not easily available etc.)</span><br>
                     No as such.
                 </li>
                 <br>
 
                 <li>
-                    <b>Are there areas where the users get lost right now?</b><br>
+                    <span class="bold">Are there areas where the users get lost right now?</span><br>
                     Branding, theme, overall navigation.
                 </li>
                 <br>
 
                 <li>
-                    <b>Are they able to find what they want when they come here? (Information Architecture)</b><br>
+                    <span class="bold">Are they able to find what they want when they come here? (Information Architecture)</span><br>
                     Existing IA doesn't achieve the audience target.
                 </li>
                 <br>
 
                 <li>
-                    <b>How would you think a user would describe this product?</b><br>
+                    <span class="bold">How would you think a user would describe this product?</span><br>
                     Overall users have rated 2.8 on this app.
                 </li>
             </ul>
-
-            <p class="mt-5"><span class="small fw-bolder">Branding</span><br>
-                The current brand logo is mixed with multiple items/objects. Red and Gray colors are representing high contrast in their pair. 
-                Hence getting visibility disturbance.
-            </p>
-
-            <p class="mt-5"><span class="small fw-bolder">Theme</span><br>
-                The current color theme is “Red” which has a range of symbolic meanings including war, anger, and danger. 
-                When people become angry their faces become flushed with color.
-            </p>
-
-            <p class="mt-5"><span class="small fw-bolder">Accessibility</span><br>
-                Overall navigation is lengthy and included unnecessary flows. Haven't thought about POUR principals.
-            </p>
-
-            <p class="mt-5"><span class="small fw-bolder">Trend</span><br>
-                Overall application experience gives an outdated feel.
-            </p>
-
-            <div class="photo-gallery">
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <img class="my-3" src="../images/sajag/sajag-1.png">
-                    </div>
-                    <div class="col-md-6">
-                        <img class="my-3" src="../images/sajag/sajag-2.png">
-                    </div>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">EVALUATION</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="regular mt-3"><span class="bold">Branding</span><br>
+                        The current brand logo is mixed with multiple items/objects. Red and Gray colors are representing high contrast in their pair. 
+                        Hence getting visibility disturbance.
+                    </p>
+        
+                    <p class="regular mt-5"><span class="bold">Theme</span><br>
+                        The current color theme is “Red” which has a range of symbolic meanings including war, anger, and danger. 
+                        When people become angry their faces become flushed with color.
+                    </p>
+        
+                    <p class="regular mt-5"><span class="bold">Accessibility</span><br>
+                        Overall navigation is lengthy and included unnecessary flows. Haven't thought about POUR principals.
+                    </p>
+        
+                    <p class="regular mt-5"><span class="bold">Trend</span><br>
+                        Overall application experience gives an outdated feel.
+                    </p>
                 </div>
-
-                <hr>
-                <p class="small fw-bolder text-center">Persona</p>
-                <img class="my-3" src="../images/sajag/sajag-3.png">
-
-                <hr>
-                <p class="small fw-bolder text-center">Sketch</p>
-                <img class="my-3" src="../images/sajag/sajag-4.png">
-
-                <hr>
-                <p class="small fw-bolder text-center">Information Architecture</p>
-                <img class="my-3" src="../images/sajag/sajag-5.png">
-
-                <hr>
-                <p class="small fw-bolder text-center">Mock Up</p>
-                <img class="my-3" src="../images/sajag/sajag-6.png">
-                <img class="my-3" src="../images/sajag/sajag-7.png">
-                <img class="my-3" src="../images/sajag/sajag-8.png">
-                <img class="my-3" src="../images/sajag/sajag-9.png">
-                <img class="my-3" src="../images/sajag/sajag-10.png">
-                <img class="my-3" src="../images/sajag/sajag-11.png">
-                <img class="my-3" src="../images/sajag/sajag-12.png">
-            </div>
-
-            <div class="photo-gallery-mobile">
-                <p><em>(<span class="fw-bolder">Note: </span>You can zoom and view the below images in new tab. To open the images in new tab click on them)</em></p>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <a href="../images/sajag/sajag-1.png" target="_blank">
-                            <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-1.png">
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="../images/sajag/sajag-2.png" target="_blank">
-                            <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-2.png">
-                        </a>
-                    </div>
+                <div class="col-md-6">
+                    <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-2.png">
+                    <a href="../images/sajag/sajag-2.png" target="_blank">
+                        <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-2.png">
+                    </a>
                 </div>
-                
-                <hr>
-                <p class="small fw-bolder text-center mt-1">Persona</p>
-                <a href="../images/sajag/sajag-3.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-3.png">
-                </a>
-                
-                <hr>
-                <p class="small fw-bolder text-center mt-1">Sketch</p>
-                <a href="../images/sajag/sajag-4.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-4.png">
-                </a>
-
-                <hr>
-                <p class="small fw-bolder text-center mt-1">Information Architecture</p>
-                <a href="../images/sajag/sajag-5.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-5.png">
-                </a>
-
-                <hr>
-                <p class="small fw-bolder text-center mt-1">Mock Up</p>
-                <a href="../images/sajag/sajag-6.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-6.png">
-                </a>
-                <a href="../images/sajag/sajag-7.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-7.png">
-                </a>
-                <a href="../images/sajag/sajag-8.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-8.png">
-                </a>
-                <a href="../images/sajag/sajag-9.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-9.png">
-                </a>
-                <a href="../images/sajag/sajag-10.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-10.png">
-                </a>
-                <a href="../images/sajag/sajag-11.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-11.png">
-                </a>
-                <a href="../images/sajag/sajag-12.png" target="_blank">
-                    <img class="my-3 rounded-end rounded-start" src="../images/sajag/sajag-12.png">
-                </a>
             </div>
         </div>
     </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">PERSONA</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-3.png">
+            <a href="../images/sajag/sajag-3.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-3.png">
+            </a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">SKETCH</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-4.png">
+            <a href="../images/sajag/sajag-4.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-4.png">
+            </a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">INFORMATION ARCHITECTURE</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-5.png">
+            <a href="../images/sajag/sajag-5.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-5.png">
+            </a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">BRANDING</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-6.png">
+            <a href="../images/sajag/sajag-6.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-6.png">
+            </a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">LOGIN</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-7.png">
+            <a href="../images/sajag/sajag-7.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-7.png">
+            </a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">LANDING</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-8.png">
+            <a href="../images/sajag/sajag-8.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-8.png">
+            </a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">SUB</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-9.png">
+            <a href="../images/sajag/sajag-9.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-9.png">
+            </a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">INNRER</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-10.png">
+            <a href="../images/sajag/sajag-10.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-10.png">
+            </a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">INNRER</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-11.png">
+            <a href="../images/sajag/sajag-11.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-11.png">
+            </a>
+        </div>
+    </div>
+    <div class="card my-4">
+        <div class="card-body">
+            <p class="medium bold smoke">INNRER</p>
+            <img class="case-study-photo my-3 rounded-end rounded-start" src="../images/sajag/sajag-12.png">
+            <a href="../images/sajag/sajag-12.png" target="_blank">
+                <img class="my-3 rounded-end rounded-start case-study-photo-mobile" src="../images/sajag/sajag-12.png">
+            </a>
+        </div>
+    </div>
 
-    <!-- More Case Studies -->
-    <div class="row">
-        <p class="fw-bolder small">More Case Studies</p>
-        <div class="col-md-4">
-            <a href="/static/templates/powertech.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
-                    <div class="col-md-4">
-                        <img class="rounded-start rounded-end" src="/static/images/powertech/powertech-hero.png">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="dark text-truncate">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                Powertech
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Assest Performance Management</span>
-                        </p>
-                    </div>
-                </div>
+    <!-- Other Case Studies Section -->
+    <div class="regular row bold py-2">
+        <div class="col-6">
+            <a href="../../index.html#work" class="text-decoration-none text-dark icon-link icon-link-hover main-link"
+                style="--bs-icon-link-transform: translate3d(-.125rem, 0, 0);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 
+                        .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg>
+                Other Case Studies
+            </a>
+            <a href="../../index.html#work-mobile" class="text-decoration-none text-dark icon-link icon-link-hover mobile-link"
+                style="--bs-icon-link-transform: translate3d(-.125rem, 0, 0);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 
+                        .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg>
+                Other Case Studies
             </a>
         </div>
-        <div class="col-md-4">
-            <a href="/static/templates/eatnjoy.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
-                    <div class="col-md-4">
-                        <img class="rounded-start rounded-end" src="/static/images/eat-n-joy/eat-n-joy-hero.png">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="dark text-truncate">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                Eat n' Joy
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Multi-cuisine Dining Chain</span>
-                        </p>
-                    </div>
-                </div>
+        <div class="col-6 text-end">
+            <a href="sajag.html#other-case-studies" class="text-decoration-none text-dark icon-link icon-link-hover"
+                style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 
+                        .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+                </svg>
+                Top
             </a>
         </div>
-        <div class="col-md-4">
-            <a href="/static/templates/myride.html"
-                class="text-decoration-none fw-bolder case-study">
-                <div class="row py-2 rounded-start rounded-end">
-                    <div class="col-md-4">
-                        <img class="rounded-start rounded-end" src="/static/images/my-ride/my-ride-hero.png">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="dark text-truncate">
-                            <span class="fw-bolder icon-link icon-link-hover mt-1">
-                                My Ride
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                </svg>
-                            </span><br>
-                            <span class="text-body-secondary">Trust Your Trip</span>
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="regular pt-5" id="contact">
+        <a href="tel:+91 9960060177" class="text-decoration-none text-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="40" fill="currentColor" class="bi bi-telephone-fill text-muted" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 
+                    .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 
+                    1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg>
+            <span style="padding-left: 1%;">+91 9960 060177</span>
+        </a>
     </div>
 
      <!-- Bootstrap JS -->
