@@ -2,11 +2,12 @@
 @media only screen and (max-width: 640px) {
     body {
         padding: 20% 8%;
+        background-color: #F5F5F8;
     }
 
     /* Navigation Bar */
     #navigation-bar {
-        background-color: white;
+        background-color: #F5F5F8;
         padding: 0% 5%;
     }
 
@@ -45,11 +46,12 @@
 @media only screen and (min-width: 641px) and (max-width: 991px) {
     body {
         padding: 8% 8%;
+        background-color: #F5F5F8;
     }
 
     /* Navigation Bar */
     #navigation-bar {
-        background-color: white;
+        background-color: #F5F5F8;
         padding: 0% 8%;
     }
 
@@ -92,11 +94,12 @@
 @media only screen and (min-width: 991px) and (max-width: 1280px) {
     body {
         padding: 8% 8%;
+        background-color: #F5F5F8;
     }
 
     /* Navigation Bar */
     #navigation-bar {
-        background-color: white;
+        background-color: #F5F5F8;
         padding: 0% 8%;
     }
 
@@ -138,13 +141,14 @@
 /* Regular Laptops and Television Screens */
 @media only screen and (min-width: 1281px) {
     body {
-        padding: 6% 8%;
+        padding: 6% 15%;
+        background-color: #F5F5F8;
     }
 
     /* Navigation Bar */
     #navigation-bar {
-        background-color: white;
-        padding: 0% 8%;
+        background-color: #F5F5F8;
+        padding: 0% 15%;
     }
 
     #navigation-bar .collapse {

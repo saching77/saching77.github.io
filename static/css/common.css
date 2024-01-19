@@ -23,11 +23,11 @@ body {
 /* Smartphone Screens */
 @media only screen and (max-width: 640px) {
     .x-large {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .large {
-        font-size: 30px;
+        font-size: 22px;
     }
     
     .medium {
@@ -46,11 +46,11 @@ body {
 /* iPad Screens */
 @media only screen and (min-width: 641px) and (max-width: 991px) {
     .x-large {
-        font-size: 42px;
+        font-size: 34px;
     }
 
     .large {
-        font-size: 34px;
+        font-size: 24px;
     }
     
     .medium {
@@ -69,11 +69,11 @@ body {
 /* Smaller Laptop Screens */
 @media only screen and (min-width: 991px) and (max-width: 1280px) {
     .x-large {
-        font-size: 45px;
+        font-size: 36px;
     }
 
     .large {
-        font-size: 36px;
+        font-size: 26px;
     }
     
     .medium {
@@ -89,14 +89,37 @@ body {
     }
 }
 
-/* Regular Laptops and Television Screens */
-@media only screen and (min-width: 1281px) {
+/* Regular Laptop Screens */
+@media only screen and (min-width: 1281px) and (max-width: 1560px) {
     .x-large {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .large {
-        font-size: 40px;
+        font-size: 30px;
+    }
+    
+    .medium {
+        font-size: 18px;
+    }
+
+    .regular {
+        font-size: 16px;
+    }
+    
+    .small {
+        font-size: 12px;
+    }
+}
+
+/* Larger Laptops and Television Screens */
+@media only screen and (min-width: 1561px) {
+    .x-large {
+        font-size: 45px;
+    }
+
+    .large {
+        font-size: 35px;
     }
     
     .medium {
