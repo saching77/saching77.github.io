@@ -2,7 +2,9 @@
 @media only screen and (max-width: 640px) {
     /* Layout */
     body {
-        padding: 20% 10%;
+        padding-top: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
         background-color: #F5F5F8;
     }
 
@@ -21,18 +23,29 @@
     }
 
     /* Work Section */
-    #work-mobile .row {
-        background-color: white;
+    #work-mobile .card {
+        border: none;
+        background-color: #F5F5F8;
+        margin-bottom: 10%;
     }
 
-    #work-mobile .row, #posts-mobile .row {
-        margin-bottom: 5%;
-    }
-
-    #work-mobile img, #posts-mobile img {
+    #work-mobile .card-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        padding-bottom: 300px;
+        background-color: white;
+    }
+
+    #work-mobile .card-text {
+        position: absolute;
+        top: 20%;
+        width: 90%;
+    }
+
+    #work-mobile .card-topics {
+        position: absolute;
+        bottom: 10%;
     }
 
     /* Disabled Elements */
@@ -45,7 +58,9 @@
 @media only screen and (min-width: 641px) and (max-width: 991px) {
     /* Layout */
     body {
-        padding: 20% 10%;
+        padding-top: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
         background-color: #F5F5F8;
     }
 
@@ -64,18 +79,27 @@
     }
 
     /* Work Section */
-    #work-mobile .row {
-        background-color: white;
+    #work-mobile .card {
+        border: none;
+        background-color: #F5F5F8;
+        margin-bottom: 10%;
     }
 
-    #work-mobile .row, #posts-mobile .row {
-        margin-bottom: 5%;
-    }
-
-    #work-mobile img, #posts-mobile img {
+    #work-mobile .card-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    #work-mobile .card-text {
+        position: absolute;
+        top: 30%;
+        width: 90%;
+    }
+
+    #work-mobile .card-topics {
+        position: absolute;
+        bottom: 10%;
     }
 
     /* Disabled Elements */
@@ -88,7 +112,9 @@
 @media only screen and (min-width: 991px) and (max-width: 1280px) {
     /* Layout */
     body {
-        padding: 5% 10%;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
         background-color: #F5F5F8;
     }
 
@@ -136,18 +162,36 @@
     }
 
     /* Work Section */
-    #work .row {
-        background-color: white;
-    }
-
-    #work .row, #posts .row {
+    #work .card {
+        border: none;
+        background-color: #F5F5F8;
+        position: relative;
         margin-bottom: 5%;
     }
 
-    #work img, #posts img {
+    #work .card-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    #work .card-img-overlay {
+        width: 95%;
+        padding: 5%;
+    }
+
+    #work .card-title {
+        position: absolute;
+        top: 5%;
+    }
+
+    #work .card-text {
+        position: absolute;
+        top: 25%;
+    }
+
+    #work .card-topics {
+        display: none;
     }
 
     /* Posts Section */
@@ -163,12 +207,6 @@
 
 /* Regular Laptops and Television Screens */
 @media only screen and (min-width: 1281px) {
-    /* Layout */
-    body {
-        padding: 5% 15%;
-        background-color: #F5F5F8;
-    }
-
     .left-column {
         position: fixed;
     }
@@ -202,7 +240,7 @@
     }
 
     /* E-Contact Section */
-    #e-contact {
+    #e-contact a {
         position: fixed;
         bottom: 10%;
     }
@@ -213,18 +251,37 @@
     }
 
     /* Work Section */
-    #work .row {
-        background-color: white;
-    }
-
-    #work .row, #posts .row {
+    #work .card {
+        border: none;
+        background-color: #F5F5F8;
+        position: relative;
         margin-bottom: 5%;
     }
 
-    #work img, #posts img {
+    #work .card-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    #work .card-img-overlay {
+        padding: 5%;
+    }
+
+    #work .card-title {
+        position: absolute;
+        top: 5%;
+    }
+
+    #work .card-text {
+        width: 70%;
+        position: absolute;
+        top: 25%;
+    }
+
+    #work .card-topics {
+        position: absolute;
+        bottom: 10%;
     }
 
     /* Posts Section */
@@ -235,5 +292,24 @@
     /* Disabled Elements */
     .mobile-view {
         display: none;
+    }
+}
+
+/* Special Cases */
+@media only screen and (min-width: 1281px) and (max-width: 1460px) {
+    body {
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #F5F5F8;
+    }
+}
+
+@media only screen and (min-width: 1461px) {
+    body {
+        padding-top: 5%;
+        padding-left: 15%;
+        padding-right: 15%;
+        background-color: #F5F5F8;
     }
 }
