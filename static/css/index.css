@@ -313,3 +313,7 @@
         background-color: #F5F5F8;
     }
 }
+
+#work a {
+    pointer-events: none;
+}
