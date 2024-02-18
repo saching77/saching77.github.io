@@ -1,15 +1,15 @@
 @font-face {
     font-family: "San Francisco Light";
-    src: url(/static/font/San-Francisco-Light.otf);
+    src: url(../font/San-Francisco-Light.otf);
 }
 
 @font-face {
     font-family: "San Francisco Bold";
-    src: url(/static/font/San-Francisco-Bold.otf);
+    src: url(../font/San-Francisco-Bold.otf);
 }
 
 .bold {
-    font-family: "San Francisco Bold";
+    font-family: "San Francisco Bold", sans-serif;
 }
 
 .smoke {
@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: "San Francisco Light";
+    font-family: "San Francisco Light", sans-serif;
 }
 
 /* Smartphone Screens */
