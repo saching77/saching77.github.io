@@ -1,3 +1,4 @@
+/* Importing fonts */
 @font-face {
     font-family: "San Francisco Light";
     src: url(../font/San-Francisco-Light.otf);
@@ -8,20 +9,22 @@
     src: url(../font/San-Francisco-Bold.otf);
 }
 
-.bold {
-    font-family: "San Francisco Bold", sans-serif;
-}
-
-.smoke {
-    color: #848884;
-}
-
+/* Assigning default font family */
 body {
     font-family: "San Francisco Light", sans-serif;
 }
 
-/* Smartphone Screens */
-@media only screen and (max-width: 640px) {
+/* Class for bold font */
+.bold {
+    font-family: "San Francisco Bold", sans-serif;
+}
+
+/* Class for colors */
+.smoke {
+    color: #848884;
+}
+
+@media only screen and (max-width: 639.98px) {
     .x-large {
         font-size: 32px;
     }
@@ -47,8 +50,7 @@ body {
     }
 }
 
-/* iPad Screens */
-@media only screen and (min-width: 641px) and (max-width: 991px) {
+@media only screen and (min-width: 640px) and (max-width: 990.98px) {
     .x-large {
         font-size: 34px;
     }
@@ -66,7 +68,7 @@ body {
     }
 
     .regular {
-        font-size: 14px;
+        font-size: 15px;
     }
     
     .small {
@@ -74,8 +76,7 @@ body {
     }
 }
 
-/* Smaller Laptop Screens */
-@media only screen and (min-width: 991px) and (max-width: 1280px) {
+@media only screen and (min-width: 991px) and (max-width: 1279.98px) {
     .x-large {
         font-size: 36px;
     }
@@ -89,11 +90,11 @@ body {
     }
     
     .medium {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .regular {
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .small {
@@ -101,8 +102,7 @@ body {
     }
 }
 
-/* Regular Laptop Screens */
-@media only screen and (min-width: 1281px) and (max-width: 1560px) {
+@media only screen and (min-width: 1280px) and (max-width: 1559.98px) {
     .x-large {
         font-size: 40px;
     }
@@ -128,8 +128,7 @@ body {
     }
 }
 
-/* Larger Laptops and Television Screens */
-@media only screen and (min-width: 1561px) {
+@media only screen and (min-width: 1560px) {
     .x-large {
         font-size: 45px;
     }

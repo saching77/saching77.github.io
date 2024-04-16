@@ -1,10 +1,9 @@
-/* Smartphone Screens */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639.98px) {
     /* Layout */
     body {
         padding-top: 20%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         background-color: #F5F5F8;
     }
 
@@ -30,10 +29,10 @@
     }
 
     #work .card-img {
-        width: 100%;
+        width: 90%;
         height: 100%;
         object-fit: cover;
-        padding-bottom: 150px;
+        padding-bottom: 75px;
         background-color: white;
         opacity: 0.3;
         filter: blur(10px);
@@ -55,14 +54,22 @@
     }
 }
 
-/* iPad Screens */
-@media only screen and (min-width: 641px) and (max-width: 991px) {
+@media only screen and (min-width: 640px) and (max-width: 990.98px) {
     /* Layout */
     body {
-        padding-top: 20%;
+        padding-top: 15%;
         padding-left: 10%;
         padding-right: 10%;
         background-color: #F5F5F8;
+    }
+
+    .left-column {
+        position: fixed;
+    }
+    
+    .right-column {
+        position: relative;
+        width: 100%;
     }
 
     #experience, #work, #posts {
@@ -83,7 +90,7 @@
     #work .card {
         border: 0.5px solid lightgray;
         background-color: #F5F5F8;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     #work .card-img {
@@ -101,7 +108,8 @@
     }
 
     #work .card-topics {
-        display: none;
+        position: absolute;
+        bottom: 5%;
     }
 
     #hero, #vertical-navbar, #e-contact, #contact {
@@ -109,8 +117,7 @@
     }
 }
 
-/* Smaller Laptop Screens */
-@media only screen and (min-width: 991px) and (max-width: 1280px) {
+@media only screen and (min-width: 991px) and (max-width: 1279.98px) {
     /* Layout */
     body {
         padding-top: 5%;
@@ -209,8 +216,14 @@
     }
 }
 
-/* Regular Laptops and Television Screens */
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1280px) {
+    body {
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #F5F5F8;
+    }
+
     .left-column {
         position: fixed;
     }
@@ -236,7 +249,7 @@
     }
 
     #vertical-navbar .nav-link:hover {
-        font-family: "San Francisco Bold";
+        font-family: "San Francisco Bold", sans-serif;
 
         hr {
             border-top: 2px solid #0F0F0F;
@@ -300,30 +313,14 @@
     }
 }
 
-/* Special Cases */
-@media only screen and (min-width: 1281px) and (max-width: 1460px) {
-    body {
-        padding-top: 5%;
-        padding-left: 10%;
-        padding-right: 10%;
-        background-color: #F5F5F8;
-    }
-}
-
-@media only screen and (min-width: 1461px) {
-    body {
-        padding-top: 5%;
-        padding-left: 12%;
-        padding-right: 12%;
-        background-color: #F5F5F8;
-    }
-}
-
+/* Hover effect for contact icons */
 #contact a:hover, #e-contact a:hover {
     font-weight: bold;
     transform: scale(1.1);
+    transition: all 0.5s;
 }
 
+/* Hover effect for case study thumbnails */
 #work .card:hover .tint {
     position: absolute;
     background-color: rgb(0, 0, 0, 0.1);

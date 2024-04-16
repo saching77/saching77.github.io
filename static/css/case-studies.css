@@ -1,9 +1,7 @@
-/* Smartphone Screens */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639.98px) {
     body {
-        padding-top: 20%;
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 5%;
+        padding-right: 5%;
         padding-bottom: 5%;
         background-color: #F5F5F8;
     }
@@ -11,7 +9,7 @@
     /* Navigation Bar */
     #navigation-bar {
         background-color: #F5F5F8;
-        padding: 5% 5%;
+        padding: 5% 0%;
     }
 
     #navigation-bar .collapse {
@@ -38,12 +36,10 @@
     }
 }
 
-/* iPad Screens */
-@media only screen and (min-width: 641px) and (max-width: 991px) {
+@media only screen and (min-width: 640px) and (max-width: 990.98px) {
     body {
-        padding-top: 16%;
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 10%;
+        padding-right: 10%;
         padding-bottom: 5%;
         background-color: #F5F5F8;
     }
@@ -51,7 +47,7 @@
     /* Navigation Bar */
     #navigation-bar {
         background-color: #F5F5F8;
-        padding: 4% 8%;
+        padding: 5% 0%;
     }
 
     #navigation-bar .collapse {
@@ -78,12 +74,10 @@
     }
 }
 
-/* Smaller Laptop Screens */
-@media only screen and (min-width: 991px) and (max-width: 1280px) {
+@media only screen and (min-width: 991px) and (max-width: 1279.98px) {
     body {
-        padding-top: 16%;
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 10%;
+        padding-right: 10%;
         padding-bottom: 5%;
         background-color: #F5F5F8;
     }
@@ -91,7 +85,7 @@
     /* Navigation Bar */
     #navigation-bar {
         background-color: #F5F5F8;
-        padding: 4% 8%;
+        padding: 4% 0%;
     }
 
     #navigation-bar .collapse {
@@ -118,10 +112,8 @@
     }
 }
 
-/* Regular Laptops and Television Screens */
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1280px) {
     body {
-        padding-top: 10%;
         padding-left: 10%;
         padding-right: 10%;
         padding-bottom: 2%;
@@ -131,7 +123,7 @@
     /* Navigation Bar */
     #navigation-bar {
         background-color: #F5F5F8;
-        padding: 2% 15%;
+        padding: 3% 0%;
     }
 
     #navigation-bar .collapse {
@@ -158,10 +150,12 @@
     }
 }
 
-.row a:hover {
+/* Contact section */
+.contact-section a:hover {
     font-weight: bold;
 }
 
-#linkedin:hover, #mail:hover {
+.contact-section .icon:hover {
     transform: scale(1.1);
+    transition: all 0.5s;
 }
